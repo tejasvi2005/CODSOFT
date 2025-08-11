@@ -1,4 +1,4 @@
-<img width="1366" height="594" alt="Screenshot (83)" src="https://github.com/user-attachments/assets/7d1334a1-d1a1-4db4-8cf2-83c12fb6d773" /><img width="1366" height="613" alt="Screenshot (82)" src="https://github.com/user-attachments/assets/7355f8f8-2cd5-41c2-a324-5ff26b81ae53" /># Code & Chill ☕💻
+# Code & Chill ☕💻
 
 Welcome to **Code & Chill** – a stylish and developer-themed landing page built for CodSoft Internship Task 2.
 
