@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Tailwind CSS via CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- The custom CSS has been moved to style.css -->
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-6 sticky top-0 z-50">
+        <div class="container flex justify-between items-center">
+            <!-- Name or Logo -->
+            <a href="#" class="text-3xl font-bold text-gray-900 transition duration-300 nav-link">Sai Tejasvi Tumuluri</a>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300 font-semibold">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-500 transition duration-300 font-semibold">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-500 transition duration-300 font-semibold">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-500 transition duration-300 font-semibold">Contact</a>
+            </nav>
+
+            <!-- Mobile menu button (optional) -->
+            <!-- For a full project, you would add JavaScript here to handle the mobile menu -->
+            <button class="md:hidden text-gray-600 hover:text-blue-500 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <main class="container">
+        <section id="about" class="py-16 md:py-24">
+            <h2 class="section-title">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Profile Image -->
+                <div class="w-full md:w-1/3">
+                    <img src="asserts/photo (1).jpg" alt="Profile Picture" class="rounded-full shadow-xl w-64 h-64 mx-auto md:mx-0 object-cover">
+                </div>
+                <!-- Bio -->
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Hello, I'm Sai Tejasvi Tumuluri</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I am a passionate and dedicated web developer with expertise in creating modern, responsive, and user-friendly web applications. My journey in web development began with a curiosity for how websites are built, and it has evolved into a passion for solving complex problems and building elegant digital solutions. I am proficient in various technologies and always eager to learn new ones.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mt-4">
+                        In my free time, I enjoy exploring new programming paradigms, contributing to open-source projects, and staying up-to-date with the latest industry trends. Let's build something amazing together!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mb-12">
+            <h2 class="section-title">My Skills</h2>
+            <ul class="skills-list flex flex-wrap justify-center gap-4 text-gray-700 font-medium">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+                <li>RESTful APIs</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 md:py-24">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 project-card">
+                    <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Project+1+Image" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title One</h3>
+                        <p class="text-gray-600 text-sm">
+                            A brief description of your project. Highlight the technologies used and the main features. This is a great place to show off what you've built.
+                        </p>
+                        <a href="#" class="mt-4 inline-block text-blue-500 hover:text-blue-700 font-semibold transition duration-300">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 project-card">
+                    <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Project+2+Image" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title Two</h3>
+                        <p class="text-gray-600 text-sm">
+                            Another project description. Explain the problem it solves and what you learned during its development.
+                        </p>
+                        <a href="#" class="mt-4 inline-block text-blue-500 hover:text-blue-700 font-semibold transition duration-300">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 project-card">
+                    <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Project+3+Image" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title Three</h3>
+                        <p class="text-gray-600 text-sm">
+                            A final project to showcase your range. Mention any unique features or technologies you implemented here.
+                        </p>
+                        <a href="#" class="mt-4 inline-block text-blue-500 hover:text-blue-700 font-semibold transition duration-300">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-16 md:py-24 text-center">
+            <h2 class="section-title">My Resume</h2>
+            <p class="text-lg text-gray-700 mb-8">
+                Feel free to download my full resume to learn more about my professional background and skills.
+            </p>
+            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+                <i class="fas fa-file-download mr-2"></i> Download Resume
+            </a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mb-12">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="text-center text-gray-700 text-lg">
+                <p class="mb-2">I'm always open to new opportunities and collaborations.</p>
+                <p class="mb-2">Feel free to reach out via email or phone.</p>
+                <p class="mt-6 text-2xl font-semibold text-gray-900">
+                    <i class="fas fa-envelope text-blue-500 mr-2"></i>
+                    <a href="mailto:your.email@example.com" class="hover:text-blue-500 transition duration-300">tumuluritejasvi@gmail.com</a>
+                </p>
+                <p class="mt-2 text-2xl font-semibold text-gray-900">
+                    <i class="fas fa-phone text-blue-500 mr-2"></i>
+                    <a href="tel:123-456-7890" class="hover:text-blue-500 transition duration-300">9676346156</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container text-center">
+            <p>&copy; 2025 Sai Tejasvi Tumuluri. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

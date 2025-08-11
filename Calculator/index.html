@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom styles for the calculator grid -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+    <!-- Calculator Container -->
+    <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-sm">
+
+        <!-- Calculator Display -->
+        <div class="bg-gray-900 text-right p-4 rounded-xl mb-6 shadow-inner">
+            <div id="display" class="text-white text-4xl font-bold tracking-wide overflow-x-auto whitespace-nowrap">0</div>
+        </div>
+
+        <!-- Calculator Buttons Grid -->
+        <div class="calculator-grid">
+            <!-- Clear Button -->
+            <button class="col-span-2 bg-red-500 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-red-600 transition-colors" data-value="C">C</button>
+            <!-- Operator Buttons -->
+            <button class="bg-indigo-500 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-indigo-600 transition-colors" data-value="/">&divide;</button>
+            <button class="bg-indigo-500 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-indigo-600 transition-colors" data-value="*">&times;</button>
+
+            <!-- Number Buttons -->
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="7">7</button>
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="8">8</button>
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="9">9</button>
+            <button class="bg-indigo-500 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-indigo-600 transition-colors" data-value="-">&minus;</button>
+
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="4">4</button>
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="5">5</button>
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="6">6</button>
+            <button class="bg-indigo-500 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-indigo-600 transition-colors" data-value="+">&plus;</button>
+
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="1">1</button>
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="2">2</button>
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="3">3</button>
+            
+            <button class="col-span-2 bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value="0">0</button>
+            <button class="bg-gray-700 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-gray-600 transition-colors" data-value=".">.</button>
+            
+            <!-- Equals Button -->
+            <button class="bg-emerald-500 text-white font-bold text-2xl p-4 rounded-xl shadow-lg hover:bg-emerald-600 transition-colors" data-value="=">&equals;</button>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
