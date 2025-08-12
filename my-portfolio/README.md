@@ -21,8 +21,3 @@ It serves as an online resume and project showcase, helping you present your **s
 1. Clone or download this repository.
 2. Open the `index.html` file in your browser.
 3. Explore the portfolio sections.
-
-## 📸 Screenshot
-*(Optional: Add a screenshot of your portfolio here)*
-
----
