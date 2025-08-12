@@ -1,57 +1,121 @@
-/* Custom CSS for a unique look */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f3f4f6; /* Light gray background */
-    color: #374151; /* Dark gray text */
+    scroll-behavior: smooth;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
-.section-title {
-    position: relative;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1f2937;
-    padding-bottom: 0.5rem;
-    margin-bottom: 2rem;
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+.fade-in:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skill card styling */
+.skill-card {
+    background-color: #eff6ff;
+    padding: 1rem;
+    border-radius: 0.5rem;
     text-align: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1d4ed8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
 }
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background-color: #3b82f6; /* Blue underline */
-    border-radius: 9999px;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.nav-link:hover {
-    color: #3b82f6;
-}
-
-.skills-list li {
-    padding: 0.5rem 1rem;
-    background-color: #e5e7eb;
-    border-radius: 9999px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
-.skills-list li:hover {
+.skill-card:hover {
     transform: scale(1.05);
-    background-color: #d1d5db;
+}
+
+/* Project card styling */
+.project-card {
+    background-color: #f9fafb;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn-purple {
+    display: inline-block;
+    background-color: #7c3aed;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.btn-purple:hover {
+    background-color: #6d28d9;
+}
+
+.btn-pink {
+    display: inline-block;
+    background-color: #db2777;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.btn-pink:hover {
+    background-color: #be185d;
+}
+
+.btn-cyan {
+    display: inline-block;
+    background-color: #06b6d4;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.btn-cyan:hover {
+    background-color: #0891b2;
+}
+
+.btn-green {
+    display: inline-block;
+    background-color: #16a34a;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-green:hover {
+    background-color: #15803d;
+    transform: scale(1.05);
 }

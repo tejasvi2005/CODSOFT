@@ -3,153 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Include Tailwind CSS via CDN for modern styling -->
+    <title>Personal Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- The custom CSS has been moved to style.css -->
+    
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header Section -->
-    <header class="bg-white shadow-lg py-6 sticky top-0 z-50">
-        <div class="container flex justify-between items-center">
-            <!-- Name or Logo -->
-            <a href="#" class="text-3xl font-bold text-gray-900 transition duration-300 nav-link">Sai Tejasvi Tumuluri</a>
-            
-            <!-- Navigation -->
-            <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300 font-semibold">About</a>
-                <a href="#skills" class="text-gray-600 hover:text-blue-500 transition duration-300 font-semibold">Skills</a>
-                <a href="#projects" class="text-gray-600 hover:text-blue-500 transition duration-300 font-semibold">Projects</a>
-                <a href="#contact" class="text-gray-600 hover:text-blue-500 transition duration-300 font-semibold">Contact</a>
-            </nav>
-
-            <!-- Mobile menu button (optional) -->
-            <!-- For a full project, you would add JavaScript here to handle the mobile menu -->
-            <button class="md:hidden text-gray-600 hover:text-blue-500 focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 shadow-lg rounded-b-xl md:rounded-b-3xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2 md:mb-0">Sai Tejasvi Tumuluri 👋</h1>
+            <p class="text-lg md:text-xl opacity-90">Full Stack Developer</p>
         </div>
     </header>
 
-    <!-- About Section -->
-    <main class="container">
-        <section id="about" class="py-16 md:py-24">
-            <h2 class="section-title">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <!-- Profile Image -->
-                <div class="w-full md:w-1/3">
-                    <img src="asserts/photo (1).jpg" alt="Profile Picture" class="rounded-full shadow-xl w-64 h-64 mx-auto md:mx-0 object-cover">
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- About Section -->
+        <section id="about" class="bg-white p-8 rounded-xl shadow-lg mb-8 md:mb-12 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 mb-6 md:mb-0">
+                    <img src="asserts/photo (1).jpg" alt="Your Photo" class="rounded-full object-cover w-full h-full border-4 border-blue-500 shadow-md">
                 </div>
-                <!-- Bio -->
-                <div class="w-full md:w-2/3 text-center md:text-left">
-                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Hello, I'm Sai Tejasvi Tumuluri</h3>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        I am a passionate and dedicated web developer with expertise in creating modern, responsive, and user-friendly web applications. My journey in web development began with a curiosity for how websites are built, and it has evolved into a passion for solving complex problems and building elegant digital solutions. I am proficient in various technologies and always eager to learn new ones.
-                    </p>
-                    <p class="text-lg text-gray-700 leading-relaxed mt-4">
-                        In my free time, I enjoy exploring new programming paradigms, contributing to open-source projects, and staying up-to-date with the latest industry trends. Let's build something amazing together!
-                    </p>
+                <div class="text-lg leading-relaxed text-gray-700">
+                    <p class="mb-4">Hi, I’m Sai Tejasvi Tumuluri — a passionate and detail-oriented final-year B.Tech student aspiring to build impactful and user-friendly web applications. With hands-on experience in HTML, CSS, JavaScript, and a growing expertise in Java, Data Structures & Algorithms, and modern web technologies, I aim to craft solutions that blend creativity with efficiency..</p>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mb-12">
-            <h2 class="section-title">My Skills</h2>
-            <ul class="skills-list flex flex-wrap justify-center gap-4 text-gray-700 font-medium">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>React</li>
-                <li>Tailwind CSS</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MongoDB</li>
-                <li>Git & GitHub</li>
-                <li>Responsive Design</li>
-                <li>RESTful APIs</li>
-            </ul>
+        <section id="skills" class="bg-white p-8 rounded-xl shadow-lg mb-8 md:mb-12 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React.js</div>
+                <div class="skill-card">Tailwind CSS</div>
+                <div class="skill-card">Node.js</div>
+                <div class="skill-card">MongoDB</div>
+                <div class="skill-card">Express.js</div>
+                <div class="skill-card">Git/GitHub</div>
+            </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="py-16 md:py-24">
-            <h2 class="section-title">Featured Projects</h2>
+        <section id="projects" class="bg-white p-8 rounded-xl shadow-lg mb-8 md:mb-12 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 project-card">
-                    <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Project+1+Image" alt="Project 1" class="w-full h-48 object-cover">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUPEhIWFRUWFxUVFRUVFRUWFRUVFRUYFxUVFRUYHSggGBolGxYVITEhJSkrLi4uFx81ODMsNygtLisBCgoKDg0OGxAQGC0lHyUtLS0tLS0tLS0tLSstKy0tKy0tLS0tNy0tLS0tLSstLS0tLS0tLS0tLS0tLTUtLS0tL//AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAQMFBgIEBwj/xABIEAABAwEEAwkOAQwCAwAAAAABAAIRAwQSITEFE0EHIlFSYYGRs9EGFBUyMzQ1U3FzdJKhssEWI0JDVGJjgpOx0vBy8SRE4f/EABkBAQEBAQEBAAAAAAAAAAAAAAABBAMCBf/EACURAQACAgEDBQADAQAAAAAAAAABEQIDMgQSIRMxUYGRQUJhUv/aAAwDAQACEQMRAD8A9dUIolenkRFCAhRQgIoRARQiAkqCiAihEAooRAlFCICKEQFCIgKCiIgolFColQiiUCURQgIihBKKFKDvpChaFuz2upT0ewU3ubftDGPukguZqqzrpI2S1p5kxi5omai2/wBw8B6CouHgPQV8tUqjzJNVwAE4udjyAbSsk/RdQEg2lsgkEX3TgYynn/448i9564wrun3ccd3d7Q+krh4D0FLh4D0FfLtS+2ZqkxIwc7Egxhjz+xU98P47vmd2rpPTzH8vMdTE+0PqcsIxIPQVxlfNfc9pmrZrTTtLHBzqRc4NqOdcdvS2DBx8bAcIX013L6SNqsVntTmhrqtJlQtGQLmgkCdkrlnhODtrzjNQSkrNQl0LnbpTCSkrN3QkBLKYOUlZyAl0JZTBSkrO3RwJdCWUwMoSs9dCXQllMBKSs/dHAl0cCWU1+UlbBdHAl0cCWU16VErYro4F0aekAW3tVUzIgMcTgAcRE7Y9oIVtKYuVErLd/t9VV2/q3fguzUeA2/GycsedLKYCVErLstoLA/VuMz4rb2Xs4VJtzYnV1Nv6p2zkiUm4IqWHlQSsz362J1dT+mZzIxj2fVTTtjTMMfgJxpuEiQMJGOaWUwsqFm9JtGqJjgjpCwisSkwIoUoMgvPN2/0fR+KZ1FdehLRN2J0WGlJ/9lnUV1dfKEz4y8PhRCy761PVx+nekuvYXYwAE5ztXJ9ahxX7f1jebNq2Ww0w0IsjaalIjeBwM43nNIiOQYGV1HFVKZzc7s1OrpWy0qrG1GOe4OY9ocxw1TzDmuwOIHQvpmgGsa1jGta1oDWtaAGtaBAa0DAADYvm3cy9MWP3jupqL6K0npFtns9S0OBIYJgZkkwBOzEjFZeomp8temawt3NamtWv9zHdSbSajKtLVPptDyA6+LpnPAEOEZRtCzI0pR4/0d2LPjlGUXDrjnGUXEr9amtVB0nS430d2K2z2ym8wx07dq9PTlrU1qmtkqbTahSpOquBIaJIaJdnsCC3WprVj290dlLi3WgEZghwjGMyI/8AmOWKqq91Vla2/rCW39XIY/x4vRlxZM5Q13AUqfguPlldamtWJPdXZJjWcaCGuIJY665ogSSCDsiBKzFGoHNDxk4AjAjAiRgckotx1qa1WooqrWprVaiCrWprVaiCrWpreRQ/NXKopFTkU61cqtQNaXuIDWgkk5AASSVXZLZTqtvU3teMpaZx4Eqaui/4ctamtVqKK6Okak0nc33BYVZjSPk3c33BYdeoeZJRRKKoyC893b/R9H4pnUV16CvPd270fR+KZ1FdetfKEz4y8fNJmqD7+/mCzkxxy9itNno+v9n5t/1VJsx1YqyIJiMZwJHs2Kx2j3jElnD5RmQ5AZWv7YfpVaKbBF19/Od6WxlGee3oVK7o0Y/IOpnM4VG5DGc10lYSYbRuY+mLH7x/U1F9JvoNqMdTe0Oa4XXNIkEHMEL5s3MfTFj94/qai+h9OWupRslarSbee1stET7TAzgSY5Fk6ian6a9MxGFys0RoSz2UOFCmGXovGSSYmASSTAk4cqyK0ruB0/aLSazajhWawNLXhoaL5vSyQADhGyRzhbULTU9S75mYZ548g6Vm1zGWN4+zpqyxyxicY8O0ipoVnOMOpubhMktPNgf9hXr26K62S4OBuG6ATwOyOOMrnWyXCo9wZLG3nSMCbs4icfZJVR1m2cgl2opXnNhxnPEkNO9xEuJ5yobQc0FrKNIAuLjjALnTedAGZx6Vy75rxOoGeWtGIjMb3hhT3zWjyAnffrRGAluMbThyIODmVAJFGnsIE47CRlEzOKuaawAAZTGHGMDHAAXcojgXGnaKxzogYnDWA4YQcvpyLnrqnqh847EEB9fiU/bfcMPZdUtfWnxG7JN48k4R/sI2tUxmmB/ODOPYoFartpj5xyRs9qAX1uIz5iPpCNqVo8mzLAXznwE3VdRqOM3m3eeZ5VZKDqF1fDe09s75ww/RjDhlXWcvxvhoOy6SQekK2UlRVT81cqX5q0qoxukNJhpNJhGsO9F5pLA45XsRhiMuFdGq51M0y86sta97qdBv5t7wDBc4wSIHixmM1r2mrQKVYipVJcDeN0yXGCACBlgQYwiF0tKd2BebxpeIQ4AuwJaP0sMOHnX0cOkymInGLhky3xc249zfdjbe+KNkq2Z1oFQ760Mm80OIkvAptY1rN9jMkAbc/UQvPNxm0uOjSxzy97Kjw4ucXOF5rHtmTJkOnnXoLCYxXz867pqGvH28ujpHybub7gsMszpHybub7gsKrDzJKIoQZFee7t3mFH4pnUV16CvPd23zCj8UzqK69a+UPOfGXjZom6HxgTAOGfArRYauWrf8px+ipvGIkxwSYwx/H6qde7jn5jtWxh8LO8qvqn/I7sXCrRc3xmubOV4Ef3Tvl5EX3RnF4xPDEri55OZJ9plPJ4bNuY+mLH7x/U1F9LU3Qvmncx9MWP3j+pqL6T2LNu5Nejgta4DACPYp1nIurQY8NIJx30GMpJu4cggcsKprK+19PxvVum7h+/F7PkXPth17pr2d/WciazkXQpU64IvVGEYSBTIJG2DfwK7ik4xCxMyVHSudPJVuVlPJeZVTqH+tdGOF1u2YIMbPwTUv9a75Wdiio2tG9LJk5tdESbuAdnESuw2Yxz/2UFVKk4Ok1C4Y70hojHhAV0rrVG1o3pZMnMOykXcjnEzzK+nMCYnbGU7YlRXKUldeoKuN0szMSHeLGGRzmVZZw+N+Wk/uggcmBJKCyUlSiCJQqUQUvzVrhhCqfmrlUaHpzucr1LY51JoDXhrjUdAaDAaeWd7MAbV3LP3C0A385UqPccXEQ0HhgQT9VuCLVPW7e2MYmq+HGOnwuZmLap3LdzLbPRs7myyqKTGV5BIqtAm65pjEOLrpzF5w2wtrCIsszMzcu0RTH6S8m7m+4LCLNaS8m7m+4LCr1DzIihFUZBefbtvmFH4pnUV16AvP92zzCj8UzqK6uvlCZ8ZeOm0Ouaud7Mx07ecrsHStXElwJIiSxk5zOWaoNUasMu43pvTsjKIVzrYyZ73p5zgakeyL0f8Aa1/TF9qrRanv8YzGOTR/YKhcnmSSBEk4DIcglcVXltG5j6YsfvH9TUX0tTAjFfNO5j6YsfvH9TUX0q1ktIWXfybdHFzZdORlcrgXXs1jutLZJm9tM74knHnw4FHeDePUyIjWOjEEZTy/2XF2dm4EuBdXwe2Iv1P6jsPZjhmu1SZdAEkxwmT0oOFVuC5UhgorZKaQwQcoSEhIUUhISEhAhISEhBXXeWwQ0u4YOP1VXfLs9U7bhhOBPLGzh2hdmEhBjbbpCqwgMsz3giSQ5oDTjvSM5wGQjFKOkKpqhhsz2tkjWFzLoGMGAZ2D/YnJQiqUqfmuvaqF4nGqMQd46B4sYcn4rsPzVdXxsqhyyIDeYSg6neX79o4PHzj8OhQbFP6y0j+ccw/Fd9lGRm8e12P0Uiz/ALzvmKWU61BlxxdFY3v0XG80Y7ATgu8CqtQOM75iubKcTiceEkoOjpPybub7gsIs3pPybub7gsGvUPMpUKFKqMgvPt2zzCj8UzqK69BXn27Z5hR+KZ1FdXXyhM+MvHyaerwDtZOJwuRjzzl0dF7u9oMa6f0QTT+pj2LpItlMNiIiqNo3MfTFj94/qai+lmOABJXzTuY+mLH7x/U1F9LU2gggrJv5NvT8UUbU1wLgcBMnCMCQceSCp76p8dvzDZmlKztaCAM5nnz/ALqe92Z3G/KOCP7Lg7I76p8dvzBWNIIkQRwhUusdIiDTZlHijLgV4AGARXCtkppZKK2SmlkqjmiIooiIgIiICIiAiIgpfmqrRaXtmKLnwQBdLcQQMcSNsjmVr81XVp74m445Yh8ThwSqirv6rn3tU2YXqUmQZI30YQM4zQW2qZ/8Z4jhdTAPshxXM0/3HHb5TbweMhpZbx39Q4Y/8vag7NF5LQS0tJElpiRyGCR0LmuoKf8ADdjE7/gyOea7TRAhRWP0n5N3N9wWCWd0n5N3N9wWCXuHiRSoRVGQXn27X5hR+KZ1FdegLz/dr8wo/FM6iurr5QmfGXjSIi2sAiIg2jcx9MWP3j+pqL6VDoaSvmrcx9MWP3j+pqL6WY6Fk38m3RxVWW1lzS4tOE4RDjBIy5Yw4ZUG3j1dX+m5XtcBkIU60Li7OsdIjD81Vx/hnhiD0T7FfZq98E3XNjDfNLTzSuWtCa0IFbJTSyXCo+VzpZIOaIiiiIiAiIgIiICIiCipmp1hUVM1xVRz1hTWFcEQc9YU1hXBEHW0l5J3N9wWCWc0n5J3N9wWCXqHmUyiiUVRkF5/u1eYUfimdRXXoC8/3avMKPxTOorq6+UJnxl42iItrAIiINo3MfTFj94/qai+k182bmPpix+8f1NRfSay7+TZo4iIi4uwiIgK6lkqVdTyUlYc0UIoqURQglFEoglFiLR3S2Om91N9pptc0w5pcJBGYKr/ACtsP7XS+YLp6Wf/ADP45+rhH9o/WbRYT8rbD+10vmCusndHZKrxTp2im57sGtDhJwnDmBSdWcf1n8I24T4jKP13qma4rlUzXFeHsREVQREQdXSfknc33BYFZ7Sfknfy/cFgVYSRERVGQXn+7T5hR+KZ1Fdb+tA3afMKPxTOorq6+UJnxl44iItrAIiINo3MfTFj94/qai+k182bmPpix+8f1NRfSay7+TZo4iIi4uwiIgK6nkqVMqKVLNJJvvEwcHREcCspU4ESTjMkyVXJSSg7CgqiSklKLcBYv4lT2XuQjg5forKNnukm8908Z0jOcAokpJVuUiIaBpbuHtVS01qzNQW1KheL94kAzGF3lXVPcFbOCyjLEB2wzxV6TJSStUdbtiK8Mk9DpmZnz+vNx3BWyIiy7YwdhJJjxeVd3QPcXaaVso2h+oDaZcSKd4Ey1wyu45re5KSUy63bMTHjyY9DpxmJi/H+pqZriiLI2CIiqCIiDq6T8k7m+4LArPaU8i7+X7gsArCSIolFUZBaBu0eYUfimdRXW/LraR0fSr0zRrU21GGCWuGEjIiMQeUJjNTZlFxT5oRe/fkNo39jZ81X/NR+Q2jf2RnzVf8ANaPWj4ZvQn5eBIvffyG0b+yM+ar/AJp+Q+jf2RnzVf8ANPWj4PQn5eVbmPpix+8f1NRfSa0ewdytioVW16NnayowkseHVCWkgiQHOIyJ2bVm326pxz0DsXHZl3TcO+vHtimdRa8dIVeOehvYuPhGrxz0N7Fzp0tsaLW/CNXjnob2J4Rq8c9DexKLbIi1rwjV456G9ieEavHPQ3sSi2yota8JVvWHob2KPCVbjnob2JRbZkWs+Eq3rD0N7FHhKt6w9DexKLbOi1jwlW9YehvYnhOt6w9DexKLbOi1fwnW9YehvYnhOt6w9DexKLbQi1bwnW9YehvYp8J1vWHob2JRbaEWtN0lV456G9isGkKvHPQ3sSktsKLX+/6vHPQOxO/6vHPQ3sVotsCLX+/6vHPQ3sUeEKvHPQ3sSi2X0p5F3N9wWvq6ra3uEOcSODD8FQrCSIiIMgoRQoqZUIoQSoREEFVOVpXBwQUELjdV5aouoKLqQrrqi6gphIV11RdQVXVF1XXVF1EVQouq0tS6gquqIV11RdQUwkK66ouqiq6kK26l1BxaFYFAClBKIoQEUIgIoREEREGQKgoij0hSiIOKIiCAihEEFQURBBRERAqFKIOKBEQFCIqIKhEQSoKIgKFCIJCkIiCFBREBFCIChSiIhSiIP//Z" alt="Project 1 Thumbnail" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title One</h3>
-                        <p class="text-gray-600 text-sm">
-                            A brief description of your project. Highlight the technologies used and the main features. This is a great place to show off what you've built.
-                        </p>
-                        <a href="#" class="mt-4 inline-block text-blue-500 hover:text-blue-700 font-semibold transition duration-300">View Project &rarr;</a>
+                        <h3 class="font-bold text-xl text-purple-700 mb-2">Onboarding Dashboard</h3>
+                        <p class="text-gray-700 text-sm mb-4">An interactive, user-friendly dashboard designed to streamline the new user onboarding process.</p>
+                        <a href="https://github.com/tejasvi2005/Onboarding-dashboard" class="btn-purple">View Project</a>
                     </div>
                 </div>
-                <!-- Project Card 2 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 project-card">
-                    <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Project+2+Image" alt="Project 2" class="w-full h-48 object-cover">
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=314,height=314,fit=cover,f=auto/591a911d9b73482c052270a8fe4cfc95/tic-tac-toe.png" alt="Project 2 Thumbnail" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title Two</h3>
-                        <p class="text-gray-600 text-sm">
-                            Another project description. Explain the problem it solves and what you learned during its development.
-                        </p>
-                        <a href="#" class="mt-4 inline-block text-blue-500 hover:text-blue-700 font-semibold transition duration-300">View Project &rarr;</a>
+                        <h3 class="font-bold text-xl text-pink-700 mb-2">Tic Tac Toe Game</h3>
+                        <p class="text-gray-700 text-sm mb-4">A classic two-player game built with responsive design and interactive gameplay logic.</p>
+                        <a href="https://github.com/tejasvi2005/Tic-Tac-Toe-Game" class="btn-pink">View Project</a>
                     </div>
                 </div>
-                <!-- Project Card 3 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 project-card">
-                    <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Project+3+Image" alt="Project 3" class="w-full h-48 object-cover">
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://private-user-images.githubusercontent.com/162474739/476466155-10ac0165-aa7f-49c8-a509-1797d6a69c6d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQ5OTc0NjUsIm5iZiI6MTc1NDk5NzE2NSwicGF0aCI6Ii8xNjI0NzQ3MzkvNDc2NDY2MTU1LTEwYWMwMTY1LWFhN2YtNDljOC1hNTA5LTE3OTdkNmE2OWM2ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxMlQxMTEyNDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YWU2MThhOWIwZjEwNzY4NTZiYjY3ZjdlMGRhMGVjYWFhODM5ODdlMDY2YTgxY2EyMDY1NjE3NmM5NjAwZTI1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.nVZYyQWCjzAENxsmHDUO08Jm-ATQ3a6ZAfbnphTO0f4" alt="Project 3 Thumbnail" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Project Title Three</h3>
-                        <p class="text-gray-600 text-sm">
-                            A final project to showcase your range. Mention any unique features or technologies you implemented here.
-                        </p>
-                        <a href="#" class="mt-4 inline-block text-blue-500 hover:text-blue-700 font-semibold transition duration-300">View Project &rarr;</a>
+                        <h3 class="font-bold text-xl text-cyan-700 mb-2">Code & Chill</h3>
+                        <p class="text-gray-700 text-sm mb-4">A sleek and modern landing page promoting a coding community, designed with clean UI and engaging visuals for a welcoming user experience.</p>
+                        <a href="https://github.com/tejasvi2005/CODSOFT/tree/main/LandingPage" class="btn-cyan">View Project</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Resume Section -->
-        <section id="resume" class="py-16 md:py-24 text-center">
-            <h2 class="section-title">My Resume</h2>
-            <p class="text-lg text-gray-700 mb-8">
-                Feel free to download my full resume to learn more about my professional background and skills.
-            </p>
-            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">
-                <i class="fas fa-file-download mr-2"></i> Download Resume
+        <section id="resume" class="bg-white p-8 rounded-xl shadow-lg mb-8 md:mb-12 text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">My Resume</h2>
+            <p class="text-lg text-gray-700 mb-6">Download my full resume...</p>
+            <a href="https://drive.google.com/file/d/1pudQRt_j_L_H16jqcPCqD0sSG81Hc8rf/view?usp=drive_link" target="_blank" class="btn-green">
+                Download Resume (PDF)
             </a>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mb-12">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="text-center text-gray-700 text-lg">
-                <p class="mb-2">I'm always open to new opportunities and collaborations.</p>
-                <p class="mb-2">Feel free to reach out via email or phone.</p>
-                <p class="mt-6 text-2xl font-semibold text-gray-900">
-                    <i class="fas fa-envelope text-blue-500 mr-2"></i>
-                    <a href="mailto:your.email@example.com" class="hover:text-blue-500 transition duration-300">tumuluritejasvi@gmail.com</a>
-                </p>
-                <p class="mt-2 text-2xl font-semibold text-gray-900">
-                    <i class="fas fa-phone text-blue-500 mr-2"></i>
-                    <a href="tel:123-456-7890" class="hover:text-blue-500 transition duration-300">9676346156</a>
-                </p>
+        <section id="contact" class="bg-white p-8 rounded-xl shadow-lg mb-8 md:mb-12 text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-6">I'm always open to new opportunities...</p>
+            <div class="flex flex-col items-center space-y-4 text-lg text-gray-800">
+                <p><strong class="text-blue-600">Email:</strong> <a href="mailto:your.email@example.com" class="text-blue-600 hover:underline">tumuluritejasvi@gmail.com</a></p>
+                <p><strong class="text-blue-600">Phone:</strong> <a href="tel:+1234567890" class="text-blue-600 hover:underline">+91 96xxxxxxxx</a></p>
+                <div class="flex space-x-4 mt-4">
+                    <!-- Placeholder for social media icons -->
+                    <a href="https://www.linkedin.com/in/sai-tejasvi-tumuluri-6371a0272/" target="_blank" class="text-blue-700 hover:text-blue-900 transition duration-300 text-3xl">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/tejasvi2005" target="_blank" class="text-gray-700 hover:text-gray-900 transition duration-300 text-3xl">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.11 0-.258 0-.575v-2.203c-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.328-1.757-1.328-1.757-1.087-.745.084-.73.084-.73 1.205.086 1.838 1.238 1.838 1.238 1.07 1.834 2.807 1.304 3.492 1.002.108-.78.418-1.304.762-1.605-2.665-.3-5.464-1.332-5.464-5.93 0-1.31.465-2.383 1.235-3.22-.12-.3-.535-1.52.117-3.176 0 0 1-.32 3.3.09.96-.262 1.98-.392 3-.396 1.02.004 2.04.134 3 .396 2.3-1.41 3.3-.09 3.3-.09.652 1.656.237 2.876.117 3.176.77.837 1.235 1.91 1.235 3.22 0 4.61-2.802 5.62-5.475 5.92.42.36.806 1.092.806 2.204v3.256c0 .318-.2.686 0 .575C20.562 21.8 24 17.302 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
             </div>
+            
         </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container text-center">
-            <p>&copy; 2025 Sai Tejasvi Tumuluri. All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-6 mt-8 rounded-t-xl md:rounded-t-3xl text-center shadow-lg fade-in">
+        <div class="container mx-auto">
+            <p class="text-sm md:text-base mb-2">&copy; 2025 Sai Tejasvi. All rights reserved.</p>
+            <p class="text-xs md:text-sm opacity-80">Built with ❤️</p>
         </div>
     </footer>
 
